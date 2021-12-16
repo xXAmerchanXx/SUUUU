@@ -1,0 +1,250 @@
+body {
+  background-color: #3e3e3e;
+}
+
+.contenedor {
+  background-color: #3e3e3e;
+}
+
+.fondo-logo {
+  width: 550px;
+  height: 300px;
+  background-color: #f6ea1a;
+  padding: 1.5em;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border: solid 1.5em black;
+}
+
+.batman {
+  position: relative;
+  width: 550px;
+  height: 300px;
+  background-color: black;
+  border-radius: 50%;
+/*  border: 2vh solid black;
+  position: relative; */
+}
+
+.redonda-A-D {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  left: 200px;
+  margin: 0 auto;
+  background-color: #f6ea1a;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 70%;
+  border-top-right-radius: 80%;
+}
+
+.redonda-A-I {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 200px;
+  left: 0;
+  margin: 0 auto;
+  background-color: #f6ea1a;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 30%;
+  border-top-left-radius: 80%;
+}
+
+.cabeza {
+  width: 70px;
+  height: 20px;
+  position: absolute;
+  right: 15px;
+  left: 0;
+  top: -10;
+  margin: 0 auto;
+  background-color: #f6ea1a;
+  transform: skewX(30deg);
+}
+
+.cabeza2 {
+  width: 70px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  left: 15px;
+  top: -10;
+  margin: 0 auto;
+  background-color: #f6ea1a;
+  transform: skewX(-30deg);
+}
+
+.qlo-I-I {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 250px;
+  left: 0;
+  top: 200px;
+  margin: 0 auto;
+  background-color: #f6ea1a;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  border-top-left-radius: 70%;
+  border-top-right-radius: 50%;
+  transform: skewX(25deg);
+}
+
+.qlo-I-D {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 110px;
+  left: 20px;
+  top: 200px;
+  margin: 0 auto;
+  background-color: #f6ea1a;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  border-top-left-radius: 70%;
+  border-top-right-radius: 50%;
+  transform: skewX(20deg);
+}
+
+.qlo-D-D {
+  width: 100px;
+  height: 95px;
+  position: absolute;
+  right: 0;
+  left: 250px;
+  top: 200px;
+  margin: 0 auto;
+  background-color: #f6ea1a;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  border-top-left-radius: 70%;
+  border-top-right-radius: 50%;
+  transform: skewX(-20deg);
+}
+
+.qlo-D-I {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 20px;
+  left: 110px;
+  top: 200px;
+  margin: 0 auto;
+  background-color: #f6ea1a;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  border-top-left-radius: 70%;
+  border-top-right-radius: 50%;
+  transform: skewX(-20deg);
+}
+
+.bat-cabeza {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  background-color: black;
+  top: 600px;
+  left: 170px;
+  right: 0;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+}
+
+.cuerno-I {
+  height: 145px;
+  position: absolute;
+  bottom: 150px;
+  border-right: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-left: 50px solid black;
+  border-bottom: 50px solid black;
+}
+
+.cuerno-D {
+  height: 400px;
+  width: 0;
+  position: absolute;
+  bottom: 295px;
+  left: 250px;
+  border-bottom: 100px solid black;
+  border-left: 100px solid transparent;
+}
+
+.ojo-I {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  background-color: white;
+  left: 50px;
+  right: 120px;
+  bottom: 190px;
+  border-radius: 50%;
+}
+
+.ojo-D {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  background-color: white;
+  left: 220px;
+  right: 50px;
+  bottom: 190px;
+  border-radius: 50%;
+}
+
+.boca {
+  background-color: #FCD0B4;
+  height: 100px;
+  width: 280px;
+  position: absolute;
+  left: 35px;
+  bottom: 35px;
+  border-radius: 10%;
+}
+
+.fondo-logo, .redonda-A-I, .redonda-A-D, .cabeza, .cabeza2, .qlo-I-I, .qlo-I-D, .qlo-D-D, .qlo-D-I {
+  animation: Color-logo 3s linear 2s infinite alternate;
+}
+
+@keyframes Color-logo {
+  0% { background-color: #f6ea1a; }
+  100% { background-color: black; }
+}
+
+.batman {
+  animation: Color-log 3s linear 2s infinite alternate;
+
+}
+/*
+.fondo-logo {
+  animation: borde-log 3s linear 2s infinite alternate;
+} */
+
+@keyframes Color-log {
+  0% { background-color: black; }
+  100% { background-color: #f6ea1a; }
+}
+
+@keyframes borde-log {
+  0% { border-color: black; }
+  100% { border-color:  #f6ea1a; }
+
+}
+
+.contenedor {
+  animation: tamanyo 3s linear 2s infinite alternate;
+}
+
+@keyframes tamanyo {
+  0% { transform: scale(1); }
+  25% { transform: scale(0.75); }
+  50% { transform: scale(0.5); }
+  75% { transform: scale(0.25); }
+  100% { transform: scale(0); }
+}
